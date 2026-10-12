@@ -1,4 +1,4 @@
-# SPFARMA Flutuante — Windows 0.2.0
+# SPFARMA Flutuante — Windows 0.2.1
 
 Aplicativo instalado para Windows x64, conectado por HTTPS ao sistema em https://spfarma-entregas.onrender.com. Requer internet e um acesso existente. Interface, permissões e dados são carregados do servidor; atualizações publicadas no Render aparecem no aplicativo ao reabri-lo. O instalador contém somente a janela do aplicativo, sem banco, senhas ou cópia offline do sistema.
 
@@ -6,17 +6,20 @@ Aplicativo instalado para Windows x64, conectado por HTTPS ao sistema em https:/
 
 Download público: https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest
 
-1. Baixe `SPFARMA-Flutuante-Instalador-0.2.0.exe` e execute o instalador em português.
+Download direto, sem página intermediária: https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe
+
+1. Baixe `SPFARMA-Flutuante-Instalador.exe` e execute o instalador em português. O pacote local de build inclui a versão no nome (`SPFARMA-Flutuante-Instalador-0.2.1.exe`).
 2. A instalação cria **SPFARMA Flutuante** na área de trabalho e no Menu Iniciar.
 3. Abra o atalho e entre com sua conta. Usuário, Caixa e administrador iniciam em Vendas.
 4. Para fixar na barra de tarefas, abra o aplicativo, clique com o botão direito no ícone da barra e escolha **Fixar na barra de tarefas**. O instalador cria o atalho e a identidade necessários; a fixação é uma escolha feita no Windows.
 
-O executável fica em uma pasta permanente do usuário, e o desinstalador aparece nos Aplicativos do Windows. Não é necessário instalar Node/Electron separadamente. O pacote 0.2.0 não possui assinatura digital; o arquivo `SHA256SUMS.txt` do download permite conferir a integridade. O repositório do sistema permanece privado; somente a distribuição deste aplicativo é pública.
+O executável fica em uma pasta permanente do usuário, e o desinstalador aparece nos Aplicativos do Windows. Não é necessário instalar Node/Electron separadamente. O pacote 0.2.1 não possui assinatura digital; o arquivo `SHA256SUMS.txt` do download permite conferir a integridade. O repositório do sistema permanece privado; somente a distribuição deste aplicativo é pública.
 
 ## Operação
 
 - **Vendas** abre a emissão; **Caixa** abre pedidos, consulta, acompanhamento, impressão e conclusão por código para os perfis autorizados.
 - **Menu** abre as demais funções do perfil, incluindo lançamento manual e cadastro de endereço para o administrador.
+- **Iniciar com Windows** ativa/desativa o início automático ao entrar no Windows, para o usuário deste computador. Começa desligado; o botão marcado indica configuração ativada e a escolha permanece ao fechar/reabrir. Disponível no aplicativo instalado, inclusive antes do login no sistema; exige instalar a versão 0.2.1 ou posterior. Não faz login automático nem altera o prazo da sessão. Desinstalar remove a inicialização; atualizar mantém a escolha. No desenvolvimento/portátil, a opção fica desabilitada para não apontar para executável temporário.
 
 - Arraste a barra vermelha para posicionar sobre seu sistema de vendas.
 - Recolher reduz para uma barra. Nova entrega expande e mantém os campos sem recarregar.
@@ -35,6 +38,7 @@ Verificação com bancos/perfis temporários:
 - `node verificacao/verify-desktop.cjs`: isolamento, formulário, recolhimento, fixação, emissão e saída.
 - `node verificacao/verify-desktop-operations.cjs`: Usuário/Caixa, impressão/conclusão, rascunho, menu e novo endereço.
 - `node verificacao/verify-desktop-online.cjs`: saúde e tela de login do servidor público, sem autenticar nem gravar dados reais.
+- `node verificacao/verify-desktop-startup.cjs`: registro de início automático em namespace de teste, persistência ao reabrir, ativação/desativação e barra em quatro larguras. Usa binário empacotado, sem alterar a inicialização pessoal do usuário.
 - `powershell -NoProfile -ExecutionPolicy Bypass -File verificacao/verify-desktop-installer.ps1`: instalação temporária, atalhos Desktop/Menu Iniciar e AppUserModelID, testes do executável instalado e desinstalação ao terminar. Interrompe se já houver instalação/atalhos, para preservá-los.
 
 `SPFARMA_DESKTOP_EXECUTABLE` permite testar o binário empacotado. A identidade `com.spfarma.floating` é a mesma do aplicativo e dos atalhos NSIS; ícones em `assets/` derivados dos ícones existentes do sistema. O instalador não faz deploy do servidor nem estende permissões da conta. Impressão usa o diálogo e a impressora configurados no Windows.
