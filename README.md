@@ -1,39 +1,23 @@
-# SPFARMA Flutuante — Windows 0.9.0
+# SPFARMA Flutuante — Windows 0.10.0
 
-[Baixar instalador para Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
+[Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
-Execute o instalador por cima da versão existente, sem desinstalar. Atalhos, configuração da impressora, identidade do terminal e perfil são preservados. O aplicativo usa o sistema online por HTTPS e exige internet.
+## Novidade
 
-## Novidades da versão 0.9.0
+Tela de carregamento animada SPFARMA na abertura do aplicativo e durante a preparação da interface. A animação respeita a opção de movimento reduzido do sistema. Atualizações mostram o andamento na mesma tela; erros continuam oferecendo tentar novamente. Os controles de fechar/minimizar permanecem acessíveis.
 
-Iniciar com Windows e Impressoras ficam em Menu → Configurações → Aplicativo Windows. O servidor/interface também precisa ser atualizado para mostrar esse menu no novo app. Configurações de impressão, identidade do terminal e início automático são preservadas.
+## Instalação e atualização
 
-Caixa abre em Hoje, oferece Ontem e filtros por seleção sem botões-filtro. Prévias compactas mantêm cliente, código e total na primeira linha; nomes longos ficam com reticências. Comanda traz data junto de Entrega prevista, endereço sem cidade, total alinhado, valor a cobrar antes de cada parcela e QR/código com espaçamento mínimo. Pix, iFood e pagamentos prévios não entram no valor a cobrar. Atualize emissores e receptores para usar o novo cupom.
+Execute o instalador por cima da versão atual, sem desinstalar. Perfil, impressoras, terminal e início automático são preservados. A partir da 0.8.0, o app verifica novas versões em cada abertura, instala silenciosamente e reabre antes de iniciar Vendas. Durante o uso, não reinicia uma venda ativa: espera próxima abertura, fechamento normal ou login livre. Sem internet, permite continuar e tenta novamente.
 
-Admin → Regras de entrega permite selecionar por prazo, por emissão ou livremente, pausar novas reservas e exigir comanda impressa antes de reservar. Não cancela reservas/retiradas existentes. Prazo, limite e remuneração continuam configuráveis. Administrador também pode enviar som MP3/WAV até 2 MB e 20 segundos para avisos dentro do app. O som do vídeo solicitado ainda depende de arquivo fornecido pelo usuário; o sino padrão é mantido enquanto não configurado. Com o app fechado, Web Push continua usando o som definido pelo celular; não garante áudio personalizado.
+Apps 0.4.0 a 0.7.0 ainda seguem o ciclo anterior de baixar e instalar ao fechar normalmente; precisam concluir esse ciclo ou executar o instalador novo uma vez. O portátil e o desenvolvimento não usam o atualizador.
 
-## Login e conexão
+## Configurações e impressão
 
-No Windows, o login permanece salvo ao fechar e reabrir. No celular, deixe Manter conectado marcado. A sessão persistente não vence por inatividade no servidor; o cookie dura 400 dias e se renova diariamente durante o uso. Sair, revogar acesso, mudar senha ou limpar os dados locais exige novo login. Sessões já expiradas antes desta atualização precisam entrar novamente uma vez.
+Iniciar com Windows e Impressoras ficam em Menu → Configurações → Aplicativo Windows. A interface do servidor também precisa estar atualizada. Para imprimir entre aplicativos, registre os terminais, crie/autorize grupo no acesso admin e selecione o receptor. Só o receptor configura a impressora local; não usa compartilhamento de impressoras do Windows. Receptor precisa estar aberto/conectado, podendo estar recolhido ou no login. São enviados um cupom e uma comanda por venda; atualizar emissores/receptores mantém o layout térmico.
 
-Ao voltar ao primeiro plano ou recuperar internet, o sistema verifica a sessão e recupera os dados sem limpar os campos. O sistema operacional pode suspender o navegador em segundo plano. A política de login exige que o administrador publique também o código atualizado no servidor existente, preservando banco, disco e variáveis.
+Caixa mantém Hoje/Ontem e prévias compactas. Regras de seleção, pausa, limite, exigência de impressão, prazo e remuneração são administradas no servidor. Login permanece salvo; Sair, revogar acesso, alterar senha ou limpar dados pode exigir entrar novamente. O app usa HTTPS e exige internet; não contém banco comercial ou credenciais de acesso no instalador.
 
-## Atualização automática
+## Integridade e ativação
 
-A versão 0.9.0 verifica atualizações em cada abertura antes de carregar Vendas. Havendo nova versão, baixa, confere a integridade, instala silenciosamente e reabre. Falhas liberam o uso e serão tentadas novamente. Durante o uso, não reinicia uma venda ativa: aplica na próxima abertura, no fechamento normal ou na tela de login livre. Consulta também a cada cinco minutos. Diagnóstico em updates.log no perfil do aplicativo.
-
-Versões 0.4.0 a 0.7.0 ainda baixam e aguardam fechamento normal para instalar. Para receber a nova política, feche normalmente e reabra depois do download, ou execute este instalador uma vez por cima. Desenvolvimento e versão portátil não executam o atualizador.
-
-## Impressão entre aplicativos
-
-Cada instalação possui identidade própria. Em Menu → Configurações → Aplicativo Windows → Impressoras, registre os aplicativos; o administrador cria o grupo e autoriza emissores/receptor. No receptor, ative Receber impressões e selecione sua impressora local; nos emissores, escolha esse aplicativo receptor do mesmo grupo. A comunicação ocorre pelo servidor online, sem compartilhamento de impressoras do Windows.
-
-Ao emitir, são enfileirados um cupom principal e uma comanda do cliente. O receptor precisa estar aberto e conectado, podendo estar recolhido ou na tela de login. Se estiver offline, os trabalhos aguardam a reconexão. Esta versão mantém o layout de cupom e até dois pagamentos da 0.7.0.
-
-O instalador não contém banco comercial ou credenciais. SHA256SUMS.txt permite conferir os arquivos; latest.yml e blockmap são usados pelo atualizador.
-
-## Android — APK teste 0.1.1
-
-[Baixar APK teste (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.1-test/SPFARMA-Entregas-0.1.1-teste.apk)
-
-Versão em validação. Notificações com app fechado ainda aguardam Firebase; não houve teste físico antes da publicação. Veja o guia no [pré-lançamento Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.1-test). O aplicativo e o atualizador Windows permanecem na versão estável 0.9.0.
+latest.yml, blockmap e SHA256SUMS.txt acompanham o pacote. O atualizador verifica SHA-512. A animação do site/interface é ativada pelo deploy do código no Render, preservando disco/banco/variáveis existentes. Esta publicação não executa deploy nem instala permanentemente no computador do usuário.
