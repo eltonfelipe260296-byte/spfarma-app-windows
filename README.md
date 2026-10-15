@@ -31,3 +31,10 @@ Cada instalação possui identidade própria. Em Menu → Configurações → Ap
 Ao emitir, são enfileirados um cupom principal e uma comanda do cliente. O receptor precisa estar aberto e conectado, podendo estar recolhido ou na tela de login. Se estiver offline, os trabalhos aguardam a reconexão. Esta versão mantém o layout de cupom e até dois pagamentos da 0.7.0.
 
 O instalador não contém banco comercial ou credenciais. SHA256SUMS.txt permite conferir os arquivos; latest.yml e blockmap são usados pelo atualizador.
+
+
+## Android — APK teste 0.1.0
+
+[Baixar APK teste (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.0-test/SPFARMA-Entregas-0.1.0-teste.apk)
+
+Versão em validação. Notificações com app fechado ainda aguardam Firebase; não houve teste físico antes da publicação. Veja o guia no [pré-lançamento Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.0-test). O aplicativo e o atualizador Windows permanecem na versão estável 0.9.0.
