@@ -32,9 +32,8 @@ Ao emitir, são enfileirados um cupom principal e uma comanda do cliente. O rece
 
 O instalador não contém banco comercial ou credenciais. SHA256SUMS.txt permite conferir os arquivos; latest.yml e blockmap são usados pelo atualizador.
 
+## Android — APK teste 0.1.1
 
-## Android — APK teste 0.1.0
+[Baixar APK teste (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.1-test/SPFARMA-Entregas-0.1.1-teste.apk)
 
-[Baixar APK teste (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.0-test/SPFARMA-Entregas-0.1.0-teste.apk)
-
-Versão em validação. Notificações com app fechado ainda aguardam Firebase; não houve teste físico antes da publicação. Veja o guia no [pré-lançamento Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.0-test). O aplicativo e o atualizador Windows permanecem na versão estável 0.9.0.
+Versão em validação. Notificações com app fechado ainda aguardam Firebase; não houve teste físico antes da publicação. Veja o guia no [pré-lançamento Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.1-test). O aplicativo e o atualizador Windows permanecem na versão estável 0.9.0.
