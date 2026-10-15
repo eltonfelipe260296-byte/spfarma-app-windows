@@ -23,8 +23,8 @@ Caixa mantém Hoje/Ontem e prévias compactas. Regras de seleção, pausa, limit
 latest.yml, blockmap e SHA256SUMS.txt acompanham o pacote. O atualizador verifica SHA-512. A animação do site/interface é ativada pelo deploy do código no Render, preservando disco/banco/variáveis existentes. Esta publicação não executa deploy nem instala permanentemente no computador do usuário.
 
 
-## Android — APK teste 0.1.3
+## Android — app 0.1.4
 
-[Baixar APK teste (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.3-test/SPFARMA-Entregas-0.1.3-teste.apk)
+[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.4-test/SPFARMA-Entregas-0.1.4-teste.apk)
 
-Firebase configurado no APK. Ative e teste as notificações no acesso Motoboy; recebimento e som com aplicativo fechado ainda precisam de teste físico. Instale por cima, sem desinstalar. A partir desta versão há busca/download automático em Configurações → Aplicativo Android, com confirmação do Android para instalar. Consulte o [guia do pré-lançamento](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.3-test). Windows permanece na versão estável 0.10.0.
+Corrige abertura da câmera para QR consultando a permissão real do Android. Instale por cima, sem desinstalar, ou use Configurações → Aplicativo Android → Verificar atualizações. Firebase e atualizações internas preservados. É necessário retestar a câmera no celular físico. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.4-test). Windows permanece na versão estável 0.10.0.
