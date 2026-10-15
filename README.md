@@ -1,59 +1,25 @@
-# SPFARMA Flutuante — Windows 0.4.0
+# SPFARMA Flutuante — Windows 0.8.0
 
-Aplicativo instalado para Windows x64, conectado por HTTPS ao sistema em https://spfarma-entregas.onrender.com. Requer internet e um acesso existente. Interface, permissões e dados são carregados do servidor; atualizações publicadas no Render aparecem no aplicativo ao reabri-lo. O instalador contém somente a janela do aplicativo, sem banco, senhas ou cópia offline do sistema.
+[Baixar instalador para Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
-## Download e instalação
+Execute o instalador por cima da versão existente, sem desinstalar. Atalhos, configuração da impressora, identidade do terminal e perfil são preservados. O aplicativo usa o sistema online por HTTPS e exige internet.
 
-Download público: https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest
+## Login e conexão
 
-Download direto, sem página intermediária: https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe
+No Windows, o login permanece salvo ao fechar e reabrir. No celular, deixe Manter conectado marcado. A sessão persistente não vence por inatividade no servidor; o cookie dura 400 dias e se renova diariamente durante o uso. Sair, revogar acesso, mudar senha ou limpar os dados locais exige novo login. Sessões já expiradas antes desta atualização precisam entrar novamente uma vez.
 
-1. Baixe `SPFARMA-Flutuante-Instalador.exe` e execute o instalador em português. O pacote local de build inclui a versão no nome (`SPFARMA-Flutuante-Instalador-0.4.0.exe`).
-2. A instalação cria **SPFARMA Flutuante** na área de trabalho e no Menu Iniciar.
-3. Abra o atalho e entre com sua conta. Usuário, Caixa e administrador iniciam em Vendas.
-4. Para fixar na barra de tarefas, abra o aplicativo, clique com o botão direito no ícone da barra e escolha **Fixar na barra de tarefas**. O instalador cria o atalho e a identidade necessários; a fixação é uma escolha feita no Windows.
-
-O executável fica em uma pasta permanente do usuário, e o desinstalador aparece nos Aplicativos do Windows. Não é necessário instalar Node/Electron separadamente. O pacote 0.4.0 não possui assinatura digital; o arquivo `SHA256SUMS.txt` do download permite conferir a integridade. O repositório do sistema permanece privado; somente a distribuição deste aplicativo é pública.
-
-## Operação
-
-- **Vendas** abre a emissão em duas páginas. Na primeira, busque o cliente, escolha/confira o endereço e veja a taxa. **Seguir para o pagamento** abre a segunda, com valor da venda, pagamento, taxa/total e **Emitir venda**. **Voltar ao endereço** mantém os valores. Emissão bem-sucedida limpa e retorna à primeira etapa; falhas mantêm os campos para repetir.
-- **Consulta** pesquisa endereço e taxa cadastrada por rua, bairro, cidade ou CEP, sem editar cadastros. Mostra dez resultados de cada vez, com Mostrar mais. Não precisa iniciar uma venda, e a troca de aba mantém o rascunho.
-- **Caixa** abre pedidos, acompanhamento, impressão e conclusão por código para os perfis autorizados.
-- **Menu** abre as demais funções do perfil, incluindo lançamento manual e cadastro de endereço para o administrador.
-- **Iniciar com Windows** ativa/desativa o início automático ao entrar no Windows, para o usuário deste computador. Começa desligado; o botão marcado indica configuração ativada e a escolha permanece ao fechar/reabrir. Disponível no aplicativo instalado, inclusive antes do login no sistema; exige instalar a versão 0.2.1 ou posterior. Não faz login automático nem altera o prazo da sessão. Desinstalar remove a inicialização; atualizar mantém a escolha. No desenvolvimento/portátil, a opção fica desabilitada para não apontar para executável temporário.
-
-- Expandido: arraste a barra vermelha para posicionar sobre seu sistema de vendas.
-- Recolher fixa a barra no canto inferior direito, acima da barra de tarefas, sem arrasto. Nova entrega restaura a posição e o tamanho anteriores, mantendo os campos.
-- Fixar mantém a janela sobre outros programas; clique novamente para desativar.
-- Auto recolhe após uma emissão bem-sucedida. Começa desativado.
-- Sair encerra a conta; − minimiza; × fecha o aplicativo.
-
-Expandido: 460 × até 800 px, redimensionável. Recolhido: 320 × 48 px. Sem preenchimento automático. Reutiliza o formulário publicado com ajustes visuais locais, sem mudanças no servidor. Conteúdo remoto sem Node, com isolamento/sandbox e navegação limitada ao site permitido.
-
-Campos de emissão com 32 px, informações repetitivas ocultas e rua/número lado a lado. A taxa aparece nas duas etapas. Avisos de erro e instruções relevantes do pagamento permanecem. O rascunho continua sendo mantido, sem texto complementar na tela. Esta reorganização é local ao aplicativo Windows; instalar a versão 0.4.0 para recebê-la.
+Ao voltar ao primeiro plano ou recuperar internet, o sistema verifica a sessão e recupera os dados sem limpar os campos. O sistema operacional pode suspender o navegador em segundo plano. A política de login exige que o administrador publique também o código atualizado no servidor existente, preservando banco, disco e variáveis.
 
 ## Atualização automática
 
-Instale esta versão uma vez por cima da existente, sem desinstalar. A partir da 0.4.0, o aplicativo instalado consulta releases públicos após 15 segundos de abertura e a cada quatro horas, baixa versões estáveis em segundo plano e instala ao fechar normalmente. A próxima abertura usa a nova versão; vendas não são interrompidas. Sem internet, tenta novamente mais tarde. Atalhos, perfil e Iniciar com Windows permanecem. Desenvolvimento, testes e portátil não executam o atualizador. A barra indica Atualização pronta quando o download termina.
+A versão 0.8.0 verifica atualizações em cada abertura antes de carregar Vendas. Havendo nova versão, baixa, confere a integridade, instala silenciosamente e reabre. Falhas liberam o uso e serão tentadas novamente. Durante o uso, não reinicia uma venda ativa: aplica na próxima abertura, no fechamento normal ou na tela de login livre. Consulta também a cada cinco minutos. Diagnóstico em updates.log no perfil do aplicativo.
 
-Próximos releases precisam incluir instalador, .blockmap e latest.yml gerados pelo builder. O nome indicado no YAML deve corresponder ao asset. O atualizador verifica SHA-512; credenciais não fazem parte do pacote.
+Versões 0.4.0 a 0.7.0 ainda baixam e aguardam fechamento normal para instalar. Para receber a nova política, feche normalmente e reabra depois do download, ou execute este instalador uma vez por cima. Desenvolvimento e versão portátil não executam o atualizador.
 
-## Desenvolvimento
+## Impressão entre aplicativos
 
-`npm ci --prefix desktop`, `npm start --prefix desktop`, `npm run build --prefix desktop` (instalador NSIS x64). Dependências/build separados do servidor. `npm run build:portable --prefix desktop` gera o portátil opcional, sem instalar atalhos.
+Cada instalação possui identidade própria. Em Impressora, registre os aplicativos; o administrador cria o grupo e autoriza emissores/receptor. No receptor, ative Receber impressões e selecione sua impressora local; nos emissores, escolha esse aplicativo receptor do mesmo grupo. A comunicação ocorre pelo servidor online, sem compartilhamento de impressoras do Windows.
 
-Verificação com bancos/perfis temporários:
+Ao emitir, são enfileirados um cupom principal e uma comanda do cliente. O receptor precisa estar aberto e conectado, podendo estar recolhido ou na tela de login. Se estiver offline, os trabalhos aguardam a reconexão. Esta versão mantém o layout de cupom e até dois pagamentos da 0.7.0.
 
-- `node verificacao/verify-desktop.cjs`: isolamento, formulário, recolhimento, fixação, emissão e saída.
-- `node verificacao/verify-desktop-operations.cjs`: Usuário/Caixa, impressão/conclusão, rascunho, menu e novo endereço.
-- `node verificacao/verify-desktop-online.cjs`: saúde e tela de login do servidor público, sem autenticar nem gravar dados reais.
-- `node verificacao/verify-desktop-startup.cjs`: registro de início automático em namespace de teste, persistência ao reabrir, ativação/desativação e barra em quatro larguras. Usa binário empacotado, sem alterar a inicialização pessoal do usuário.
-- `node verificacao/verify-desktop-flow.cjs`: duas etapas, cliente existente, validação, Consulta, taxa atualizada, preservação de valores e falha/repetição de emissão. As prévias visuais são renderizadas a partir do DOM e valores do teste, com CSS do aplicativo.
-- `powershell -NoProfile -ExecutionPolicy Bypass -File verificacao/verify-desktop-installer.ps1`: instalação temporária, atalhos Desktop/Menu Iniciar e AppUserModelID, testes do executável instalado e desinstalação ao terminar. Interrompe se já houver instalação/atalhos, para preservá-los.
-
-`SPFARMA_DESKTOP_EXECUTABLE` permite testar o binário empacotado. A identidade `com.spfarma.floating` é a mesma do aplicativo e dos atalhos NSIS; ícones em `assets/` derivados dos ícones existentes do sistema. O instalador não faz deploy do servidor nem estende permissões da conta. Impressão usa o diálogo e a impressora configurados no Windows.
-
-Não incluir dependências baixadas, executáveis, perfil ou dados pessoais no Git. A sessão fica no perfil do aplicativo no Windows e segue o prazo do servidor. Recolher preserva a página; após fechar, o próximo acesso exige login se a sessão expirou.
-
-Referências técnicas: [instalador NSIS](https://www.electron.build/nsis/), [integração da barra de tarefas](https://www.electronjs.org/docs/latest/tutorial/windows-taskbar).
+O instalador não contém banco comercial ou credenciais. SHA256SUMS.txt permite conferir os arquivos; latest.yml e blockmap são usados pelo atualizador.
