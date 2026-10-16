@@ -23,8 +23,10 @@ Caixa mantém Hoje/Ontem e prévias compactas. Regras de seleção, pausa, limit
 latest.yml, blockmap e SHA256SUMS.txt acompanham o pacote. O atualizador verifica SHA-512. A animação do site/interface é ativada pelo deploy do código no Render, preservando disco/banco/variáveis existentes. Esta publicação não executa deploy nem instala permanentemente no computador do usuário.
 
 
-## Android — app 0.1.4
+## Android — app 0.1.6
 
-[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.4-test/SPFARMA-Entregas-0.1.4-teste.apk)
+[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.6-test/SPFARMA-Entregas-0.1.6-teste.apk)
 
-Corrige abertura da câmera para QR consultando a permissão real do Android. Instale por cima, sem desinstalar, ou use Configurações → Aplicativo Android → Verificar atualizações. Firebase e atualizações internas preservados. É necessário retestar a câmera no celular físico. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.4-test). Windows permanece na versão estável 0.10.0.
+Busca de clientes por telefone sem DDD, com escolha por nome e DDD quando houver mais de um resultado. Em Minhas entregas, arraste pela alça ⠿ para reordenar os cartões; o cartão flutua durante o gesto e a ordem fica salva por motoboy. Retirada direta por QR Code ou código impresso de seis dígitos, sem reserva prévia.
+
+Instale por cima, sem desinstalar, ou use Menu → Configurações → Aplicativo Android → Verificar atualizações. Mesma assinatura original; Firebase e atualizações internas preservados. O backend precisa estar atualizado. Testes automatizados, interface no navegador e assinatura APK verificados; instalação e gesto no celular físico ainda precisam de confirmação. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.6-test). Windows permanece na versão estável 0.10.0.
