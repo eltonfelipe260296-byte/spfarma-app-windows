@@ -1,27 +1,42 @@
-# SPFARMA Flutuante — Windows 0.10.0
+# SPFARMA Flutuante — Windows 0.11.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
-## Novidade
-
-Tela de carregamento animada SPFARMA na abertura do aplicativo e durante a preparação da interface. A animação respeita a opção de movimento reduzido do sistema. Atualizações mostram o andamento na mesma tela; erros continuam oferecendo tentar novamente. Os controles de fechar/minimizar permanecem acessíveis.
-
 ## Instalação e atualização
 
-Execute o instalador por cima da versão atual, sem desinstalar. Perfil, impressoras, terminal e início automático são preservados. A partir da 0.8.0, o app verifica novas versões em cada abertura, instala silenciosamente e reabre antes de iniciar Vendas. Durante o uso, não reinicia uma venda ativa: espera próxima abertura, fechamento normal ou login livre. Sem internet, permite continuar e tenta novamente.
+Instale por cima da versão atual, sem desinstalar. Perfil, login, impressoras, terminais e início com Windows são preservados. Feche ou conclua as vendas abertas antes de atualizar.
 
-Apps 0.4.0 a 0.7.0 ainda seguem o ciclo anterior de baixar e instalar ao fechar normalmente; precisam concluir esse ciclo ou executar o instalador novo uma vez. O portátil e o desenvolvimento não usam o atualizador.
+O aplicativo instalado verifica atualizações ao abrir. Quando houver atualização durante o uso, aguarda um momento seguro ou o fechamento normal para instalar. O download direto do instalador permanece o mesmo.
 
-## Configurações e impressão
+## Barra inferior
 
-Iniciar com Windows e Impressoras ficam em Menu → Configurações → Aplicativo Windows. A interface do servidor também precisa estar atualizada. Para imprimir entre aplicativos, registre os terminais, crie/autorize grupo no acesso admin e selecione o receptor. Só o receptor configura a impressora local; não usa compartilhamento de impressoras do Windows. Receptor precisa estar aberto/conectado, podendo estar recolhido ou no login. São enviados um cupom e uma comanda por venda; atualizar emissores/receptores mantém o layout térmico.
+A barra fica visível no canto inferior direito com **+Venda**, **Consulta** e **Caixa**. Quando existem janelas abertas, a engrenagem oferece opções. Auto e Fixar foram removidos: todas as janelas ficam sempre à frente.
 
-Caixa mantém Hoje/Ontem e prévias compactas. Regras de seleção, pausa, limite, exigência de impressão, prazo e remuneração são administradas no servidor. Login permanece salvo; Sair, revogar acesso, alterar senha ou limpar dados pode exigir entrar novamente. O app usa HTTPS e exige internet; não contém banco comercial ou credenciais de acesso no instalador.
+## Vendas independentes
 
-## Integridade e ativação
+Cada clique em **+Venda** abre uma venda nova, menor e arrastável. Cada janela mantém seus próprios dados, inclusive quando minimizada. Uma janela não altera a outra.
 
-latest.yml, blockmap e SHA256SUMS.txt acompanham o pacote. O atualizador verifica SHA-512. A animação do site/interface é ativada pelo deploy do código no Render, preservando disco/banco/variáveis existentes. Esta publicação não executa deploy nem instala permanentemente no computador do usuário.
+Emissão bem-sucedida fecha somente a janela daquela venda, após o envio dos documentos para a fila. Falha na emissão mantém a janela e os dados. Se somente a impressão falhar depois de salvar a venda, o Caixa apresenta o aviso de impressão pendente; não emita a venda novamente.
 
+## Consulta e Caixa
+
+Compartilham a mesma janela fixa no lado direito. Abrir uma oculta a outra; clicar novamente no mesmo botão oculta a tela. Alternar preserva os dados da sessão. A janela fixa não pode ser arrastada. Fechá-la não encerra a barra nem as vendas.
+
+As vendas ficam acima de Consulta/Caixa, e a barra permanece visível acima das janelas. Selecionar uma venda a traz para a frente das demais vendas.
+
+## Minimizar e fechar
+
+Na engrenagem, **Minimizar janela ativa** oculta sem descartar os dados. As vendas ocultas aparecem listadas pelo nome: selecione a que deseja recuperar.
+
+**Fechar janela ativa** encerra somente a selecionada. Uma venda não emitida com dados pede confirmação para descartar. A emissão em andamento deve terminar antes do fechamento. Os mesmos comandos estão no título de cada janela.
+
+A engrenagem também mantém acesso às funções do sistema, impressoras, saída da conta e encerramento do aplicativo. Início com Windows continua nas configurações do aplicativo Windows.
+
+## Verificação
+
+O instalador, blockmap e latest.yml são distribuídos juntos. O atualizador verifica SHA-512; SHA256SUMS.txt permite conferir os arquivos baixados. Testes com banco/perfis temporários cobriram várias vendas, emissão com sucesso/falha, alternância, descarte, minimizar/recuperar, ordem nativa das janelas, impressão entre dois aplicativos e início automático. Impressão física/corte e validação final pelo usuário continuam pendentes.
+
+Mudança exclusiva do Windows. A versão Android permanece 0.1.8; não é necessário atualizar o APK para esta alteração.
 
 ## Android — app 0.1.8
 
