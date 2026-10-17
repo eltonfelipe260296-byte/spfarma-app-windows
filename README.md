@@ -1,4 +1,4 @@
-# SPFARMA Flutuante — Windows 0.13.0
+# SPFARMA Flutuante — Windows 0.14.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
@@ -36,7 +36,13 @@ A engrenagem também mantém acesso às funções do sistema, impressoras, saíd
 
 O instalador, blockmap e latest.yml são distribuídos juntos. O atualizador verifica SHA-512; SHA256SUMS.txt permite conferir os arquivos baixados. Cinco resoluções simuladas de 1024×600 até 2560×1440 verificadas sem rolagem horizontal. Testes com banco/perfis temporários cobriram várias vendas, emissão com sucesso/falha, alternância, descarte, minimizar/recuperar, ordem nativa das janelas, impressão entre dois aplicativos e início automático. Impressão física/corte e validação final pelo usuário continuam pendentes.
 
-Mudança exclusiva do Windows. A versão Android permanece 0.1.8; não é necessário atualizar o APK para esta alteração.
+Dimensões das janelas exclusivas do Windows; pagamentos compartilhados com web e Android. O Android 0.1.9 inclui os ajustes de pagamento e o atalho iFood; atualizar o APK para receber essa interface.
+
+## Pagamentos e iFood
+
+Encomenda paga dispensa valor dos produtos, segundo pagamento e comanda cliente, destacando somente a taxa de entrega cadastrada. Orientações iniciais de pagamento e formato do valor foram retiradas; validações de emissão preservadas. Pedidos iFood Pago têm um atalho para confirmação externa no acesso do motoboy. A confirmação é manual e separada da baixa no Caixa.
+
+Android atualizado para 0.1.9.
 
 ## Android — app 0.1.8
 
