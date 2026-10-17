@@ -50,15 +50,18 @@ Dinheiro exige informar Troco para, inclusive como segunda parcela. Informe 0 qu
 
 Atualize também o Android instalado para usar o novo preenchimento obrigatório.
 
-## Android — app 0.1.9
+## Android — app 0.1.10
+
+Troco obrigatório quando houver dinheiro: informe 0 para sem troco. Código iFood e Total com entrega de Convênio ocupam toda a linha; taxa do Convênio mantida no resumo. Atualize o app instalado para usar as novas validações.
+
 
 Encomenda paga sem valor dos produtos, sem segundo pagamento e sem comanda cliente. Botão Confirmar no iFood em Minhas entregas. Confirmação manual e separada da baixa no Caixa. Teste físico do acesso ao iFood ainda pendente.
 
 
-[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.9-test/SPFARMA-Entregas-0.1.9-teste.apk)
+[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.10-test/SPFARMA-Entregas-0.1.10-teste.apk)
 
 Caixa “Realizada” em Minhas entregas, com confirmação e aviso informativo ao Caixa (✓ verde). A marcação move o cartão para o fim, preserva o arrasto posterior e não faz baixa nem gera repasse. Caixa conclui pelo código em uma única etapa visível. Cartões compactados, cores de status realçadas e gradiente conforme o status: amarelo (impresso), azul (coletado), verde (concluído), sempre para branco. Instalação/teste físico desta versão ainda pendentes.
 
 Busca de clientes por telefone sem DDD, com escolha por nome e DDD quando houver mais de um resultado. Em Minhas entregas, arraste pela alça ⠿ para reordenar os cartões; o cartão flutua durante o gesto e a ordem fica salva por motoboy. Retirada direta por QR Code ou código impresso de seis dígitos, sem reserva prévia.
 
-Instale por cima, sem desinstalar, ou use Menu → Configurações → Aplicativo Android → Verificar atualizações. Mesma assinatura original; Firebase e atualizações internas preservados. O backend precisa estar atualizado. Testes automatizados, interface no navegador e assinatura APK verificados; instalação e gesto no celular físico ainda precisam de confirmação. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.9-test). Windows permanece na versão estável 0.10.0.
+Instale por cima, sem desinstalar, ou use Menu → Configurações → Aplicativo Android → Verificar atualizações. Mesma assinatura original; Firebase e atualizações internas preservados. O backend precisa estar atualizado. Testes automatizados, interface no navegador e assinatura APK verificados; instalação e gesto no celular físico ainda precisam de confirmação. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.10-test). Windows permanece na versão estável 0.10.0.
