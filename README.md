@@ -1,4 +1,4 @@
-# SPFARMA Flutuante — Windows 0.12.0
+# SPFARMA Flutuante — Windows 0.13.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
@@ -14,13 +14,13 @@ A barra fica visível no canto inferior direito com **+Venda**, **Consulta** e *
 
 ## Vendas independentes
 
-Cada clique em **+Venda** abre uma venda nova, menor e arrastável. Cada janela mantém seus próprios dados, inclusive quando minimizada. Uma janela não altera a outra.
+Cada clique em **+Venda** abre uma venda nova, arrastável, com 320 px de largura e altura ajustada ao conteúdo da etapa. A dica inicial do telefone foi removida. Mensagens de busca e erros continuam disponíveis. Em telas pequenas ou com campos adicionais, há rolagem vertical quando o conteúdo excede o monitor. Cada janela mantém seus próprios dados, inclusive quando minimizada. Uma janela não altera a outra.
 
 Emissão bem-sucedida fecha somente a janela daquela venda, após o envio dos documentos para a fila. Falha na emissão mantém a janela e os dados. Se somente a impressão falhar depois de salvar a venda, o Caixa apresenta o aviso de impressão pendente; não emita a venda novamente.
 
 ## Consulta e Caixa
 
-Compartilham a mesma janela fixa no lado direito. Abrir uma oculta a outra; clicar novamente no mesmo botão oculta a tela. Alternar preserva os dados da sessão. A janela fixa tem 80% da largura da barra (320 px) e 65% da altura útil do monitor, com rolagem vertical. Nomes de clientes têm uma linha própria; endereço e entregador quebram linha. A janela fixa não pode ser arrastada. Fechá-la não encerra a barra nem as vendas.
+Compartilham a mesma janela fixa no lado direito, encostada acima da barra inferior, sem espaço entre as bordas. Abrir uma oculta a outra; clicar novamente no mesmo botão oculta a tela. Alternar preserva os dados da sessão. A janela fixa tem 80% da largura da barra (320 px) e 65% da altura útil do monitor, com rolagem vertical. Nomes de clientes têm uma linha própria; endereço e entregador quebram linha. A janela fixa não pode ser arrastada. Fechá-la não encerra a barra nem as vendas.
 
 As vendas ficam acima de Consulta/Caixa, e a barra permanece visível acima das janelas. Selecionar uma venda a traz para a frente das demais vendas.
 
