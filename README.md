@@ -23,10 +23,12 @@ Caixa mantém Hoje/Ontem e prévias compactas. Regras de seleção, pausa, limit
 latest.yml, blockmap e SHA256SUMS.txt acompanham o pacote. O atualizador verifica SHA-512. A animação do site/interface é ativada pelo deploy do código no Render, preservando disco/banco/variáveis existentes. Esta publicação não executa deploy nem instala permanentemente no computador do usuário.
 
 
-## Android — app 0.1.6
+## Android — app 0.1.7
 
-[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.6-test/SPFARMA-Entregas-0.1.6-teste.apk)
+[Download app para Android (Android 8+)](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.7-test/SPFARMA-Entregas-0.1.7-teste.apk)
+
+Caixa “Realizada” em Minhas entregas, com confirmação e aviso informativo ao Caixa (✓ verde). A marcação move o cartão para o fim, preserva o arrasto posterior e não faz baixa nem gera repasse. Caixa conclui pelo código em uma única etapa visível. Cartões compactados, cores de status realçadas e gradiente verde para branco. Instalação/teste físico desta versão ainda pendentes.
 
 Busca de clientes por telefone sem DDD, com escolha por nome e DDD quando houver mais de um resultado. Em Minhas entregas, arraste pela alça ⠿ para reordenar os cartões; o cartão flutua durante o gesto e a ordem fica salva por motoboy. Retirada direta por QR Code ou código impresso de seis dígitos, sem reserva prévia.
 
-Instale por cima, sem desinstalar, ou use Menu → Configurações → Aplicativo Android → Verificar atualizações. Mesma assinatura original; Firebase e atualizações internas preservados. O backend precisa estar atualizado. Testes automatizados, interface no navegador e assinatura APK verificados; instalação e gesto no celular físico ainda precisam de confirmação. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.6-test). Windows permanece na versão estável 0.10.0.
+Instale por cima, sem desinstalar, ou use Menu → Configurações → Aplicativo Android → Verificar atualizações. Mesma assinatura original; Firebase e atualizações internas preservados. O backend precisa estar atualizado. Testes automatizados, interface no navegador e assinatura APK verificados; instalação e gesto no celular físico ainda precisam de confirmação. Consulte o [guia da versão](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/tag/android-v0.1.7-test). Windows permanece na versão estável 0.10.0.
