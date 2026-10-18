@@ -1,25 +1,21 @@
 # SPFARMA — Aplicativos para Windows e Android
 
-## Windows 0.20.0
+## Windows 0.21.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
-Instale por cima da versão atual, sem desinstalar. Conclua ou feche vendas abertas antes de atualizar. Perfil, acesso salvo, impressoras, atalhos e início com Windows são preservados. O atualizador automático também oferece esta versão.
+Instale por cima, sem desinstalar. Conclua ou feche vendas abertas antes de atualizar. Acesso salvo, impressoras e atalhos preservados.
 
-O topo de +Vendas mostra somente **Total da Venda** e o valor total. Foram retiradas do topo as linhas de venda, entrega e valor a cobrar, cujas informações permanecem na parte de valores e pagamento. O cálculo continua o mesmo: total com entrega, seguindo as regras de cada pagamento, incluindo convênio e Pedido Pago.
+Total da Venda e valor lado a lado, centralizados e na mesma fonte, somente na parte de pagamento. Troco em largura integral; mensagens iniciais de troco e codigo iFood removidas, com validacao preservada. Convenio mostra SOLICITAR ASSINATURA DO CLIENTE na tela. Voltar ao endereco a esquerda e Emitir venda a direita, com larguras e alturas iguais. Grade fixa 3x2 e calculos/impressao preservados.
 
-Mantidos pagamentos em grade fixa 3×2, sem seletor de colunas, Ped. pago nos botões, Pedido Pago nas impressões, endereço salvo recolhido com complemento editável e informações para o entregador no pagamento.
+Pacote e fluxo do executavel conferidos. Teste fisico de impressao/corte pendente.
 
-Fontes do app.asar, instalador, blockmap e latest.yml conferidos. Fluxo do executável com título/valor, seis pagamentos, divisão/troco e emissão/falha aprovado em perfil temporário. Testes físicos nos terminais e impressão/corte permanecem pendentes.
+## Android 0.1.16 — Canal de teste
 
-## Android 0.1.15 — Canal de teste
+[Baixar APK Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.16-test/SPFARMA-Entregas-0.1.16-teste.apk)
 
-[Baixar APK Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.15-test/SPFARMA-Entregas-0.1.15-teste.apk)
+Android 8+, versionCode 17, assinatura original. Instale por cima, sem desinstalar. Atualizacao tambem disponivel nas configuracoes do aplicativo.
 
-Android 8 ou superior. Pacote com.spfarma.entregas, versionCode 16, assinatura original preservada. Instale por cima da versão atual, sem desinstalar, e confirme quando o Android solicitar. Também disponível em Configurações → Aplicativo Android → Verificar atualizações.
+Total da Venda e valor lado a lado, centralizados e na mesma fonte, somente na parte de pagamento. Troco em largura integral; mensagens iniciais de troco e codigo iFood removidas, com validacao preservada. Convenio mostra SOLICITAR ASSINATURA DO CLIENTE na tela. Voltar ao endereco a esquerda e Emitir venda a direita, com larguras e alturas iguais. Grade fixa 3x2 e calculos/impressao preservados. Na web/Android, Voltar retorna o foco a secao de endereco do formulario.
 
-Topo de Vendas simplificado: somente **Total da Venda** e o valor total. Detalhamento de venda/entrega/cobrança retirado do topo; cálculos e regras de cada pagamento preservados. Continuam a grade fixa 3×2, Ped. pago na tela, Pedido Pago na impressão, complemento editável e informações para o entregador na seção de pagamento.
-
-Valores, troco, código iFood, rascunho, câmera, notificações e atualizador preservados. Assinatura original, Firebase e fontes conferidos, sem credenciais privadas. Bundle com Capacitor real e serviços nativos simulados aprovado. Teste físico pendente.
-
-Pré-lançamento Android separado do latest Windows 0.20.0. Atualizar o site não substitui as telas incluídas no APK instalado.
+Assinatura, Firebase e fontes conferidos. Interface testada com Capacitor real e servicos nativos simulados. Teste fisico pendente. Pre-lancamento separado do latest Windows 0.21.0.
