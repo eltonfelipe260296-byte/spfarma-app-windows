@@ -1,25 +1,25 @@
 # SPFARMA — Aplicativos para Windows e Android
 
-## Windows 0.19.0
+## Windows 0.20.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
 Instale por cima da versão atual, sem desinstalar. Conclua ou feche vendas abertas antes de atualizar. Perfil, acesso salvo, impressoras, atalhos e início com Windows são preservados. O atualizador automático também oferece esta versão.
 
-Em +Vendas, os seis pagamentos ficam somente em **três colunas e duas linhas (3×2)**. Foram removidos Botões por linha e a alternativa 2×3. A segunda forma de pagamento também usa a grade fixa.
+O topo de +Vendas mostra somente **Total da Venda** e o valor total. Foram retiradas do topo as linhas de venda, entrega e valor a cobrar, cujas informações permanecem na parte de valores e pagamento. O cálculo continua o mesmo: total com entrega, seguindo as regras de cada pagamento, incluindo convênio e Pedido Pago.
 
-Mantidos endereço salvo recolhido com complemento editável, opção de novo endereço, total no topo, informações para o entregador na etapa de pagamento, Ped. pago nos botões e Pedido Pago nas impressões. Cálculos, cobrança, troco e impressão preservados.
+Mantidos pagamentos em grade fixa 3×2, sem seletor de colunas, Ped. pago nos botões, Pedido Pago nas impressões, endereço salvo recolhido com complemento editável e informações para o entregador no pagamento.
 
-Fontes e recursos do app.asar, instalador, blockmap e latest.yml conferidos. Fluxo do executável com cliente/endereço, seis pagamentos, divisão/troco, ausência do seletor e emissão/falha aprovado em perfil temporário. Teste nos terminais e impressão/corte físicos permanecem pendentes.
+Fontes do app.asar, instalador, blockmap e latest.yml conferidos. Fluxo do executável com título/valor, seis pagamentos, divisão/troco e emissão/falha aprovado em perfil temporário. Testes físicos nos terminais e impressão/corte permanecem pendentes.
 
-## Android 0.1.14 — Canal de teste
+## Android 0.1.15 — Canal de teste
 
-[Baixar APK Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.14-test/SPFARMA-Entregas-0.1.14-teste.apk)
+[Baixar APK Android](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.15-test/SPFARMA-Entregas-0.1.15-teste.apk)
 
-Android 8 ou superior. Pacote com.spfarma.entregas, versionCode 15, assinatura original preservada. Instale por cima da versão atual, sem desinstalar, e confirme quando o Android solicitar. Também disponível em Configurações → Aplicativo Android → Verificar atualizações.
+Android 8 ou superior. Pacote com.spfarma.entregas, versionCode 16, assinatura original preservada. Instale por cima da versão atual, sem desinstalar, e confirme quando o Android solicitar. Também disponível em Configurações → Aplicativo Android → Verificar atualizações.
 
-Pagamentos em Vendas ficam somente em **3×2**, sem Botões por linha e sem alternativa 2×3. Vale também para a segunda forma de pagamento. Mantidos endereço salvo recolhido, complemento editável, total no topo, informações para o entregador na seção de pagamento, Ped. pago na tela e Pedido Pago na impressão.
+Topo de Vendas simplificado: somente **Total da Venda** e o valor total. Detalhamento de venda/entrega/cobrança retirado do topo; cálculos e regras de cada pagamento preservados. Continuam a grade fixa 3×2, Ped. pago na tela, Pedido Pago na impressão, complemento editável e informações para o entregador na seção de pagamento.
 
-Cálculos, valores, troco, código iFood, rascunho, câmera, notificações e atualizador preservados. Assinatura original, Firebase e fontes conferidos, sem credenciais privadas. Bundle com Capacitor real e serviços nativos simulados aprovado em quatro larguras, conferindo grade fixa e ausência do seletor. Teste físico pendente.
+Valores, troco, código iFood, rascunho, câmera, notificações e atualizador preservados. Assinatura original, Firebase e fontes conferidos, sem credenciais privadas. Bundle com Capacitor real e serviços nativos simulados aprovado. Teste físico pendente.
 
-Pré-lançamento Android separado do latest Windows 0.19.0. Atualizar o site não substitui as telas incluídas no APK instalado.
+Pré-lançamento Android separado do latest Windows 0.20.0. Atualizar o site não substitui as telas incluídas no APK instalado.
