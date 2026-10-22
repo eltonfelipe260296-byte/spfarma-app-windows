@@ -1,15 +1,17 @@
 # SPFARMA — Aplicativos para Windows e Android
 
-## Windows 0.23.0
+## Windows 0.28.0
 
 [Baixar instalador Windows x64](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/latest/download/SPFARMA-Flutuante-Instalador.exe)
 
-Atualização por cima da versão anterior. Layout C ERP Profissional e controle global de densidade Confortável, Compacto (padrão) e Ultracompacto. Esta versão corrige o corte dos rótulos financeiros e melhora a largura dos campos de endereço em telas estreitas. A sincronização de janelas e a formatação impressa permanecem preservadas.
+Ícone ↻ ao lado de Sair em Vendas para atualizar os dados sem recarregar a página, preservando a venda em preenchimento. O botão fica desabilitado durante a consulta.
 
-## Android 0.1.18 — Canal de teste
+Conclua as vendas antes de atualizar. Instale por cima da versão atual, sem desinstalar. Atualizador, download e hashes verificados.
 
-[Baixar APK Android 8 ou superior](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.18-test/SPFARMA-Entregas-0.1.18-teste.apk)
+## Android 0.1.24 — Canal de teste
 
-VersionCode 19, assinatura original. Instale por cima da versão anterior; dados e acesso permanecem no dispositivo. Atualização também disponível em Configurações → Aplicativo Android.
+[Baixar APK Android 8 ou superior](https://github.com/eltonfelipe260296-byte/spfarma-app-windows/releases/download/android-v0.1.24-test/SPFARMA-Entregas-0.1.24-teste.apk)
 
-Corrige o corte de rótulos financeiros e melhora os campos de endereço em telas estreitas. Layout C e três modos de densidade permanecem disponíveis. APK assinado e pacote WebView verificados; testes de interface e serviços nativos simulados passaram. Não houve teste em aparelho físico. Pré-lançamento Android separado do latest estável Windows.
+VersionCode 25, assinatura original. Inclui o ícone de atualizar dados em Vendas. Instale por cima da versão atual, sem desinstalar. Atualização também disponível em Configurações → Aplicativo Android.
+
+Assinatura, fontes do pacote, download e hashes verificados. Os 62 testes Node e a conferência do botão passaram. O verificador geral Android mantém uma falha preexistente na largura da busca de endereço, reproduzida com os arquivos anteriores. Teste em aparelho e impressora físicos pendente. Pré-lançamento Android separado do latest estável Windows.
